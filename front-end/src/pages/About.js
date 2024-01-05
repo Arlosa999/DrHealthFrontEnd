@@ -1,5 +1,4 @@
 import React from "react";
-import "./About.css"; // Import your About.css file
 
 const About = () => {
   return (
@@ -53,7 +52,7 @@ const About = () => {
         <div className="two-column-section">
           <div className="column">
             <div className="picture-column">
-             <img src="https://i.imgur.com/FBkdaAk.jpg" alt="Haroon" />
+             <img src="https://i.imgur.com/vgDXdrw.png" alt="Haroon" />
             </div>
           </div>
           <div className="column">

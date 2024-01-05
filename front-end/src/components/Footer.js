@@ -5,8 +5,8 @@ const Footer = () => {
         <footer style={footerStyle}>
           <div style={containerStyle}>
             <div style={logoStyle}>
-              <h1 style={{ fontFamily: 'Cocomat Pro', color: '#3a76e4'}}>Dr. Health</h1>
-              <p>Your Marketplace for Health Tourism</p>
+              <h1 style={{ fontFamily: 'Cocomat Pro', color: 'white'}}>Dr. Health</h1>
+              <p style={{color:'white'}}>Your Marketplace for Health Tourism</p>
             </div>
             <div style={linksContainer}>
               <div style={linksColumn}>
@@ -32,8 +32,10 @@ const Footer = () => {
       );
     };
 // Styles
+const links = document.querySelectorAll('your-selector-for-links');
+
 const footerStyle = {
-    background: '#e4eeff',
+    background: 'rgb(111, 31, 31)',
     fontWeight: 'bold',
     padding: '20px 0',
     color: '#3a76e4',
@@ -45,6 +47,8 @@ const footerStyle = {
     margin: '0 auto',
     display: 'flex',
     justifyContent: 'space-between',
+    textDecoration: 'none',
+    outline:'none',
   };
   
   const logoStyle = {
@@ -53,6 +57,7 @@ const footerStyle = {
   
   const linksContainer = {
     display: 'flex',
+    color: 'white',
     flex: '2',
   };
   
@@ -64,13 +69,18 @@ const footerStyle = {
   const columnHeading = {
     fontSize: '1.2rem',
     marginBottom: '10px',
-    color: '#3a76e4',
+    color: 'white',
   };
   
   const linkList = {
     listStyle: 'none',
+    color: 'white',
     padding: '0',
     margin: '0',
+    textDecoration: 'none',
+    outline:'none'
   };
-
+const p={
+    color: 'white',
+}
 export default Footer
